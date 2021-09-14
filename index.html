@@ -1,12 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section id="home">
+      <div class="homeSection">
+        <div class="container">
+          <div class="leftNav">
+            <a href="#home"><h2>Hospital</h2></a>
+          </div>
+          <div class="rightNav">
+            <a href="#home">Home</a>
+            <a href="#slider">Our Feedback</a>
+            <a href="#clinics">Clinics</a>
+            <a href="#contact">Contact</a>
+          </div>
+  
+          <div class="sideMenu">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#slider">Our Feedback</a>
+            <a href="#clinics">Clinics</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <span onclick="openNav()"><img class="menuIcon" src="./images/menu-4-256.png" style="width: 30px; height: 20px;"></span>
+        </div>
+
+        </div>
+        <div class="paragraphsDiv">
+          <div class="introDiv">
+            <p>Book appointments with one click!</p>
+          </div>
+          <div class="introDiv">
+            <p>Medical scientific development starts here!</p>
+          </div>
+          <div class="introDiv bookingEasyDiv">
+            <p>Booking is now easier!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="slider">
+      <div class="clinicsParegraph feedbackParagraph">
+        <h3>Our Clients Feedback</h3>
+      </div>
+      <div class="w3-content w3-section sliderContainer" >
+        <div class="quotes">
+          <h1>"</h1>
+        </div>
+        <div class="mySlides">
+          <div class="publisherInfo">
+            <img src="./images/profile.png">
+            <h4>Ahmad samer</h4>
+           </div>
+           <div class="sliderParagraph">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem maxime non totam est, 
+               debitis alias. Alias, nemo? Veniam,
+                reprehenderit aliquam ipsam nisi dolor quam tenetur eligendi, amet unde recusandae doloremque.</p>
+           </div>
+          </div>
+          <div class="mySlides">
+            <div class="publisherInfo">
+             <img src="./images/woman.png">
+             <h4>Khaled mohammed</h4>
+            </div>
+            <div class="sliderParagraph">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis,
+                 earum a? Excepturi ratione, beatae consequuntur voluptates nobis
+                 dolor animi, ipsa magni optio iste mollitia fuga!</p>
+            </div>
+           </div>
+           <div class="quotesBottom">
+             <h1>"</h1>
+           </div>
+         </div>
+      </div>
+    </section>
+
+    <section id="clinics">
+      <div class="clinicsParegraph">
+        <h3>Choose the desired clinic to book an appointment</h3>
+      </div>
+      <div class="clinicsContainer" id="booking">
+        <div class="department">
+          <img src="./images/Emergency_NGO_Logo.gif" onclick="booking()" />
+          <h3>Emergency</h3>
+        </div>
+        <div class="department">
+          <img src="./images/jreha.jpg" onclick="booking()" />
+          <h3>Department of Surgery</h3>
+        </div>
+        <div class="department">
+          <img src="./images/index.png" onclick="booking()" />
+          <h3>children section</h3>
+        </div>
+        <div class="department">
+          <img src="./images/index.jpg" onclick="booking()" />
+          <h3>maternity section</h3>
+        </div>
+        <div class="department">
+          <img
+            src="./images/png-transparent-mashhad-university-of-medical-sciences-orthopaedics-medicine-orthopedic-surgery-others-thumbnail.png"
+            onclick="booking()"
+          />
+          <h3>Orthopedic department</h3>
+        </div>
+        <div class="department">
+          <img src="./images/3a120268510f705aec9e773f0ef7ac64.png" onclick="booking()"/>
+          <h3>Intensive care department</h3>
+        </div>
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="month">
+              <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>August<br><span style="font-size:18px">2021</span></li>
+              </ul>
+            </div>
+            
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
+            
+            <ul class="days">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li><span class="active">10</span></li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+            </ul> 
+          </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contactContainer">
+        <div class="quickLinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#slider">Our Feedback</a></li>
+            <li><a href="#clinics">Clinics</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="contactDetails">
+          <h2>Contact Us</h2>
+          <div class="contactDiv">
+            <img class="contactIcons" src="./images/placeholder.png" >
+            <p>Amman - Jordan</p>
+          </div>
+          <div class="contactDiv">
+            <img class="contactIcons" src="./images/telephone.png" >
+            <p>(962) 777 77775</p>
+          </div>
+          <div class="contactDiv">
+            <img class="contactIcons" src="./images/clock.png" >
+            <p>Sun - Fri 7 AM To 10 PM</p>
+          </div>
+          <div class="contactDiv">
+            <img class="contactIcons" src="/images/mail.png" >
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+        <div class="social">
+          <h2>Get In Touch</h2>
+          <div class="socialMedia">
+            <img src="./images/facebook.png"><img src="./images/twitter.png">
+            <img src="./images/instagram.png"><img src="./images/youtube.png">
+          </div>
+          <div class="stores">
+            <img src="./images/google-play.png">
+            <img src="./images/app-store.png">
+            <img src="./images/huawei.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>
